@@ -1,10 +1,20 @@
 "use strict";
-let myName = 'Dave';
-let meaningOfLife;
-let isLoading;
-let album;
-album = true;
-isLoading = true;
-const sum = (a, b) => {
-    return a + b;
+// type assertions
+// convert to more ore less specific
+let a = 'hello';
+let b = a; //less specific
+let c = a; //more specific
+let d = 'world';
+let e = 'world';
+const addOrConcat = (a, b, c) => {
+    if (c === 'add')
+        return a + b;
+    return '' + a + b;
 };
+let myVal = addOrConcat(2, 2, 'concat');
+let nextVal = addOrConcat(2, 2, 'concat');
+10;
+//DOM
+const img = document.querySelector('img');
+const myImg = document.getElementById('#img');
+const myNextImg = document.getElementById('#img');
